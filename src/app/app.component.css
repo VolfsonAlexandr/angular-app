@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Knewave');
+
+
+.head {
+    height: 40px;
+    background: #24bd10;
+}
+    
+.left-menu {
+    height: 850px;
+    background: #96e486;
+}
+
+.logo-text {
+    font-family: 'Knewave', cursive;
+    color: rgb(19, 146, 19);
+}
+
+.nav-text {
+    color: #96e486;
+}
+
+.nav-link:hover .nav-text {
+    color: #e4e13e;
+}
+
+.nav-link {
+    background: rgb(19, 146, 19);
+}
+
+.nav-link:hover {
+    background: rgb(3, 87, 3);
+    cursor: pointer;
+}
+

@@ -1,0 +1,45 @@
+<div class="row head">
+</div>
+<div class="row">
+    <div class="col-2">
+        <p class="text-center" (click)="changePageNumber(1)"><img class="image" src="../../assets/images/personal-card-outlined-tool.png" alt="">ЛИЧНЫЕ ДАННЫЕ</p>
+    </div>
+    <div class="col-2">
+        <p class="text-center" (click)="changePageNumber(2)"><img class="image" src="../../assets/images/workers-team.png" alt="">ПАРТНЕРЫ</p>
+    </div>
+    <div class="col-2">
+        <p class="text-center" (click)="changePageNumber(3)"><img class="image" src="../../assets/images/line-chart.png" alt="">СТАТИСТИКА</p>
+    </div>
+    <div class="col-2">
+        <p class="text-center" (click)="changePageNumber(4)"><img class="image" src="../../assets/images/money.png" alt="">ЗАРАБОТОК</p>
+    </div>
+    <div class="col-2">
+        <p class="text-center" (click)="changePageNumber(5)"><img class="image" src="../../assets/images/business-plan.png" alt="">БИЗНЕС-ПЛАН</p>
+    </div>
+    <div class="col-2">
+        <p class="text-center" (click)="changePageNumber(6)"><img class="image" src="../../assets/images/wallet.png" alt="">КОШЕЛЕК</p>
+    </div>
+</div>
+
+<div class="row">
+    <div [ngSwitch]="pageNumber">
+        <div *ngSwitchCase="1">
+            <personal-info></personal-info>
+        </div>
+        <div *ngSwitchCase="2">
+            <team></team>
+        </div>
+        <div *ngSwitchCase="3">
+            <statistics></statistics>
+        </div>
+        <div *ngSwitchCase="4">
+            <earnings></earnings>
+        </div>
+        <div *ngSwitchCase="5">
+            <plan></plan>
+        </div>
+        <div *ngSwitchCase="6">
+            <wallet></wallet>
+        </div>
+    </div>
+</div> 

@@ -1,0 +1,14 @@
+p {
+    border: 2px solid #73AD21;
+    padding: 20px 20px 20px 20px;
+    height: 150px;
+}
+
+.col-2:hover p {
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.head {
+    height: 32px;
+}
